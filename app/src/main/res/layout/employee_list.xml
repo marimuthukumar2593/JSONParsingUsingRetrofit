@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/employee_background"
+
+    android:paddingBottom="13dp">
+    <ImageView
+        android:layout_width="60dp"
+        android:scaleType="fitXY"
+        android:layout_height="60dp"
+        android:id="@+id/userimage"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="User Id"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/userimage"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="First name"
+        android:id="@+id/firstname"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/userId"
+        android:layout_toRightOf="@id/userimage"
+        android:layout_toEndOf="@id/userimage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="LastName"
+        android:id="@+id/lastName"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/firstname"
+        android:layout_toRightOf="@id/userimage"
+        android:layout_toEndOf="@id/userimage"
+        android:textColor="#666"/>
+
+   <!-- <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/avartar"
+        android:layout_alignRight="@+id/avartar"
+        android:layout_alignTop="@+id/userId"
+        android:text="LastName"
+        android:textColor="@color/colorAccent" />&ndash;&gt;-->
+
+    <!--<TextView
+        android:id="@+id/avartar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lastName"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="Salary" />-->
+
+   </RelativeLayout>
